@@ -7,74 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <title>Digital Drones</title>
+    <script src="https://kit.fontawesome.com/7c5d902453.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
     <div class="nav3">
         <nav>
-            <a class="text" href="index2.html"> <b>LOJA</b> </a>
             <a class="text" href="index.html"><img class="textb" src="img/23.png"> </a>
+            <a class="text" href="index2.html"> <b>LOJA</b> </a>
             <a class="text" href="index3.html"> <b> IMAGENS </b> </a>
+            <a class="text" href="index4.html"> <b> ORÇAMENTO </b> </a>
+            <a href="https://www.instagram.com/digitaldronesudi"><i class="fa-brands fa-instagram"></i></a>
         </nav>
     </div>
-    <form action="#" method="#">    
-        <div class="orc">
-            <h3 class="fa"> FAÇA SEU ORÇAMENTO CONOSCO</h3><br>
-            <div class="row">
-                <div class="col">
-                    <label for="">NOME COMPLETO :</label>
-                    <input type="text" class="form-control" id="nome" >
-                </div>
-            </div><br />
-            <div class="col">
-                <label for="">EMAIL CONTATO :</label>
-                <input type="text" class="form-control" id="email" >
-            </div><br />
-            <div class="col">
-                <label for="">DATA DO EVENTO :</label>
-                <input type="datetime-local" class="form-control" id="local">
-            </div><br />
-            <div class="col">
-                <label for="">TELEFONE :</label>
-                <input type="text" class="form-control" id="telefone"  >
-            </div><br />
-            
-            <div class="col">
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">CIDADE :</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-
-
-                        <option>Uberlândia-MG</option>
-                        <option>Uberaba-MG</option>
-                        <option>Belo Horizonte-MG</option>
-                        <option>Outras Cidades</option>
-                    </select>
-                </div>
-                <div class="but">
-                <button id="submit" type="submit" class="btn btn-primary">COTAR</button></div>
-
-    </form>
+    <div class="vid">
+        <video width="100%" height="100%" autoplay loop muted>
+            <source src="/vid/23.webm" type="video/mp4" />
+        </video>
     </div>
+   
 </body>
-<script>
-    document.querySelector('#submit').addEventListener('click', function () {
-        let cliente = document.querySelector('#nome').value;
-        let local = document.querySelector('#local').value;
-        let email = document.querySelector('#email').value;
-        let telefone = document.querySelector('#telefone').value;
-        let exampleFormControlSelect1 = document.querySelector('#exampleFormControlSelect1').value;
 
-        let url =
-            "https://api.whatsapp.com/send?phone=5534991165934&text=*Olá Boa tarde, * %0A%0A Meu nome é %0A *" +
-            cliente + "* %0A%0A E-mail %0A *" + email + "* %0A%0A Telefone para contato %0A *" +
-            telefone + "* %0A%0A O Evento será em  %0A *" + exampleFormControlSelect1 +
-            "* %0A%0A Tem vaga disponível para esta data?  %0A *" + local + "* ";
-            
-
-        window.open(url);
-
-    });
-</script>
 
 </html>
