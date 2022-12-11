@@ -137,7 +137,7 @@ i:hover{
     
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-device-width: 861px) {
     body {
         width: 100%;
         background-color: aliceblue;
