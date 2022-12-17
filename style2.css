@@ -15,7 +15,6 @@ body {
 .text {
     font-size: 25px;
     text-decoration: none;
-    text-shadow: 1px 1px 1px black;
     color: black;
     vertical-align: middle;
     padding: 0%;
@@ -35,20 +34,15 @@ body {
 }
 .text:hover{
     color:rgb(0, 140, 255);
-    text-shadow: 1px 1px 1px black;
-    transition: 1s;
     text-decoration: none;
 }
 i {
     color: black;
     font-size: 150%;
     vertical-align: middle;
-    text-shadow: 1px 1px 1px black;
 }
 i:hover{
     color: rgb(0, 140, 255);
-    text-shadow: 1px 1px 1px black;
-    transition: 1s;
     
 }
 
