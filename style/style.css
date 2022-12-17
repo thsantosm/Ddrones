@@ -1,7 +1,6 @@
 body {
     background-color: aliceblue;
     margin: 0;
-
 }
 
 .nav3 {
@@ -21,7 +20,6 @@ body {
 .text {
     font-size: 25px;
     text-decoration: none;
-    text-shadow: 1px 1px 1px black;
     color: black;
     vertical-align: middle;
     padding: 0%;
@@ -30,46 +28,44 @@ body {
 }
 
 .orc {
+    margin:0;
     color: black;
     background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border: black 1px solid;
-    border-radius: 20px;
-    padding: 50px 25px 50px 25px;
+    margin: 5% 30% 5% 30%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     box-shadow: 10px 10px 10px black;
+
 }
 
 label {
-    width: 135px;
-    display: inline-flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0%;
     color: black;
-    text-shadow: 1px 1px 1px gray;
+    margin: 0;
 }
 
-input {
-    padding: 10px;
+ input {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
     outline: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
-    border: none;
-    border-bottom: 1px black solid;
-    border-radius: 2px;
+    border: 1px solid gray;
     color: black;
+    font-size: larger;
 }
 
 .title {
-    text-align: center;
-    margin: 10px;
     color: black;
-    text-shadow: 2px 2px 2px gray;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 140, 255);
+    padding: 25px;
+    margin-top:0;
+    text-align: center;
 }
 
 .but {
@@ -80,33 +76,34 @@ input {
 }
 
 #submit {
-    background-color: white;
-    border: 1px black solid;
-    border-radius: 5px;
+    width: 100%;
+    background-color: rgb(47, 61, 79);
+    border: none;
     outline: none;
-    padding: 10px;
+    padding: 20px;
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer;
+    font-size: larger;
 }
 
 #submit:hover {
-    background-color: greenyellow;
-    transition: 1s;
+    background-color: rgb(17, 48, 88);
 }
 
 select {
-    padding: 7px;
+    width: 100%;
+    padding: 15px;
     outline: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: none;
-    border: none;
-    border-bottom: 1px black solid;
-    border-radius: 2px;
+    border: 1px gray solid;
     color: black;
     background-color: white;
+    text-align: center;
+    font-size: larger;
 }
 
 .map {
@@ -117,27 +114,43 @@ select {
 
 .text:hover {
     color: rgb(0, 140, 255);
-    text-shadow: 1px 1px 1px black;
-    transition: 1s;
 }
 
-video{margin: 0%;
-}
 
 i {
     color: black;
     font-size: 150%;
     vertical-align: middle;
-    text-shadow: 1px 1px 1px black;
-}
-i:hover{
-    color: rgb(0, 140, 255);
-    text-shadow: 1px 1px 1px black;
-    transition: 1s;
-    
 }
 
-@media only screen and (max-device-width: 861px) {
+i:hover {
+    color: rgb(0, 140, 255);
+
+}
+#local{
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 1000px){
+    .nav3 {
+        padding-right: 15px;
+        background-color: white;
+        vertical-align: top;
+        text-align: left;
+        text-decoration: none;
+        font-size: larger;
+    }
+    .text {
+        font-size: 100%;
+        text-decoration: none;
+        color: black;
+        vertical-align: middle;
+        padding: 0%;
+        margin: 0px 25px 0px 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+}
+@media only screen and (max-device-width: 700px) {
     body {
         width: 100%;
         background-color: aliceblue;
@@ -153,21 +166,19 @@ i:hover{
     }
 
     .orc {
+        margin: 0;
+        margin-top: 50px;
+        width: 100%;
         color: black;
-        border: 1px black solid;
         background-color: white;
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 20px;
-        padding: 25px 50px 25px 50px;
+        text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
     }
 
     .text {
-        font-size: 15px;
+        width: 100%;
+        font-size: 100%;
         text-decoration: none;
         color: black;
         vertical-align: middle;
@@ -184,6 +195,33 @@ i:hover{
 
     .vid {
         margin-top: 100px;
-       
+
     }
 }
+@media only screen and (max-device-width: 430px) {
+    body {
+        width: 100%;
+        background-color: aliceblue;
+    }
+    .nav3 {
+        width: 100%;
+        padding-right: 5px;
+        background-color: white;
+        vertical-align: top;
+        text-align: left;
+        text-decoration: none;
+    }
+    .text {
+        width: 100%;
+        font-size: 90%;
+        text-decoration: none;
+        color: black;
+        vertical-align: middle;
+        padding: 0%;
+        margin: 0px 3px 0px 2px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    .textb{
+        width: 80px;
+    }}
