@@ -258,6 +258,9 @@ img {
     text-align: center;
 }
 }
+.container{
+    padding-top: 100px;
+}
 
 @media only screen and (max-device-width: 700px) {
     body {
@@ -384,6 +387,8 @@ img {
     .textc {
         width: 250px;
         text-align: center;
+        padding: 0;
+        margin: 0;
         margin-left: 70px;
         opacity: 20%;
     }
